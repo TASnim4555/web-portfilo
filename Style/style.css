@@ -1,0 +1,361 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+a{
+    all: unset;
+}
+li{
+    list-style: none;
+}
+:root{
+    --dark-color:#2b2628;
+    --light-color: #d30f40;
+    --semi-whilte:#E3E2DF;
+    --semi-dark:#d4080f;
+}
+::-webkit-scrollbar {
+    width: 2rem;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--light-color);
+    border-radius: 1rem;
+}
+
+/* ---------------------------header section--------------------- */
+
+.header{ 
+padding: 1.5rem 12%;
+background-color: var(--dark-color);
+color: white;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+   }
+   /* header logo */
+   .header .logo{
+font-size: 1.5rem;
+font-weight: 700;
+color: var(--semi-dark);
+   }
+   /* links in nav bar */
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+   gap: 2rem;
+   font-size: 1rem;
+}
+.navbar ul li{
+    cursor: pointer;
+}
+.navbar ul li a{
+    transition: .2s;
+}
+.navbar ul li a:hover{
+border-bottom: 0.1rem solid var(--light-color);
+}
+
+
+/* ---------------------------hero section--------------------- */
+
+main.home{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../assets/paper-cut-abstract-background-3d-clean-dark-carving-art-paper-craft-black-waves-minimalistic-modern-design-business-presentations_1217-2497.avif");
+    display: flex;
+    gap: 13rem;
+    padding: 5rem 12% 0;
+    align-items: center;
+}
+.home .home-content{
+    width: 50%;
+}
+.home .home-content h3{
+    font-size: 4rem;
+    color: white;
+    line-height: 6rem;
+
+}
+.home .home-content h1{
+    font-size: 3rem;
+    line-height: 4rem;
+    color: white;
+
+}
+.home .home-content span{
+    color: var(--semi-dark);
+    font-weight: 900;
+    font-size: 4rem;
+    line-height: 3rem;
+
+}
+
+.home .home-content p{
+    font-size: 3rem;
+    line-height: 4rem;
+    color: white;
+
+}
+.contact-btn button{
+    width: 8rem;
+    outline: none;
+    border: 0.1rem solid var(--dark-color);
+   cursor: pointer;
+   color: var(--semi-whilte);
+    padding: 0.8rem 0;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+animation: movebtn 3s infinite 1s;
+background-color: var(--dark-color);
+
+}
+.contact-btn button:hover{
+ opacity: 0.8;
+    transition: 0.6s;
+}
+.home-image img{
+    height: 25rem;
+        width: 25rem;
+     border-radius: 12rem;
+     filter: drop-shadow(0 0 1rem var(--semi-dark));
+}
+/* -----------------animation of button -------------- */
+@keyframes movebtn{
+0%{
+    scale: 1;
+}
+50%{
+    scale: 1.1;
+border: 0.1rem solid var(--semi-dark);
+    background-color: var(--semi-dark);
+    color: var(--semi-whilte);
+}
+100%{
+scale: 1;
+  
+}
+}
+
+
+
+/* ----------------------------------About Section---------------------------- */
+
+section.about{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 12% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13rem;
+    background-image: linear-gradient(0deg,var(--semi-dark),var(--dark-color));
+}
+.about .about-img img{
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10rem;
+    filter: drop-shadow(0 0 1rem black);
+}
+
+.about .about-content .about-heading{
+    font-size: 2rem;
+    color: white;
+    line-height: 8rem;
+    font-weight: 400;
+}
+
+.about .about-content p{
+    font-size: 1rem;
+    color: var(--dark-color);
+}
+
+/* ------------------------------projects section---------------------------------- */
+section.projects{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 12% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13rem;
+    flex-direction: column;
+    background-color: var(--dark-color);
+    position: relative;
+
+}
+
+.projects .project-heading{
+    position: absolute;
+color: var(--semi-dark);
+top: 2rem;
+font-size: 3rem;
+opacity: 0.8;
+
+}
+.projects .project-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+
+}
+.projects .project-items .project-item{
+    width:15rem;
+   height: 20rem; 
+    border-radius: 2rem;
+    background-color: var(--semi-whilte);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    position: relative;
+    filter: drop-shadow(0 0.5rem 0.7rem black);
+    opacity: 0.7;
+
+
+
+}
+.projects .project-items .project-item:hover{
+    opacity: 0.8;
+    transform: scaleY(1.033);
+    color: var(--semi-dark);
+    filter: drop-shadow(0 0 1rem var(--semi-dark));
+
+
+}
+.project-item img{
+    border-radius:1rem;
+    width:9rem; height: 9rem;
+    position: absolute;
+    top: 1.5rem;
+    
+
+}
+.project-item h3{
+position: absolute;
+top: 12rem;
+}
+.project-item a{
+    position: absolute;
+    bottom: 2rem;
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--semi-dark);
+}
+.project-item a:hover{
+    color: var(--dark-color);
+    cursor: pointer;
+
+}
+/* ----------------------------contact section-------------------------------- */
+section.contact{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5rem 12% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13rem;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(0deg,var(--semi-dark),var(--dark-color));
+}
+
+.contact .contact-heading{
+    color: var(--semi-dark);
+    font-size: 3rem;
+    opacity: 0.5;
+    position: relative;
+    top: 10rem;
+}
+.contact form{
+    border-radius: 1rem;
+    margin:1rem auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+}
+section.contact form .input_box input, section.contact form .input_box textarea{
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    background-color: transparent;
+   width: 70%;
+   outline: none;
+
+}
+.contact form textarea:active{
+    border: 0.1rem solid var(--semi-whilte);
+}
+
+
+.contact button{
+    width: 8rem;
+    outline: none;
+    border: 0.1rem solid var(--dark-color);
+   cursor: pointer;
+   color: var(--semi-whilte);
+    padding: 0.8rem 0;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+background-color: var(--dark-color);
+animation: coloredbtn 3s infinite 1s;
+    
+}
+@keyframes coloredbtn {
+    0%{
+        background-color: var(--semi-dark);
+        color: var(--semi-whilte);
+        border: 0.1rem solid var(--semi-dark);
+
+    }
+    50%{
+        background-color: var(--dark-color);
+        color: var(--semi-dark);
+        border: 0.1rem solid var(--dark-color);
+        filter: drop-shadow(0 0 1rem var(--semi-dark));
+
+
+    }
+    100%{
+        background-color: var(--semi-dark);
+        color: var(--semi-whilte);
+        border: 0.1rem solid var(--semi-dark);
+
+
+    }
+}
+/* -------------footer--------------- */
+footer.footer{
+    padding: 0 12%;
+    background-color: var(--dark-color);
+    color: var(--semi-whilte);
+    width: 100%;
+}
+footer.footer p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 5rem;
+}
+
+
+

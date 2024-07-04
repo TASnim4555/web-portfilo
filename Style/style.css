@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Roboto", sans-serif;
 }
@@ -22,7 +25,7 @@ li{
     --semi-dark:#d4080f;
 }
 ::-webkit-scrollbar {
-    width: 2rem;
+    width: 1.2rem;
 }
 ::-webkit-scrollbar-track {
     background-color: var(--dark-color);
@@ -178,8 +181,8 @@ section.about{
 }
 
 .about .about-content p{
-    font-size: 1rem;
-    color: var(--dark-color);
+    font-size: 1.5rem;
+    color: var(--semi-whilte);
 }
 
 /* ------------------------------projects section---------------------------------- */
@@ -215,8 +218,8 @@ opacity: 0.8;
 
 }
 .projects .project-items .project-item{
-    width:15rem;
-   height: 20rem; 
+    width:20rem;
+   height: 25rem; 
     border-radius: 2rem;
     background-color: var(--semi-whilte);
     display: flex;
@@ -241,7 +244,7 @@ opacity: 0.8;
 }
 .project-item img{
     border-radius:1rem;
-    width:9rem; height: 9rem;
+    width:12rem; height: 10rem;
     position: absolute;
     top: 1.5rem;
     
@@ -297,9 +300,12 @@ section.contact form .input_box input, section.contact form .input_box textarea{
     border-radius: 1rem;
     font-size: 1.2rem;
     margin-top: 2rem;
-    background-color: transparent;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.9;
    width: 70%;
    outline: none;
+   border: none;
+   color: var(--dark-color);
 
 }
 .contact form textarea:active{
